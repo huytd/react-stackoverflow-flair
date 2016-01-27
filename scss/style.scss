@@ -1,0 +1,133 @@
+html {
+    background: #DFDFDF;
+    padding: 50px;
+}
+
+.stackoverflow-profile-loading {
+  width: 320px; height: 130px;
+  position: relative;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFF;
+  margin: 0 auto;
+
+  span {
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+  }
+}
+
+.stackoverflow-profile {
+  background: #FFF;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  width: 320px; height: 130px;
+  position: relative;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+
+  .stackoverflow-icon {
+    background: url(http://sstatic.net/stackexchange/img/logos/so/so-icon.png) no-repeat;
+    width: 60px; height: 60px;
+    background-size: contain;
+    position: absolute;
+    top: 0; right: 0;
+    display: block;
+    opacity: 0.2;
+  }
+
+  img {
+    width: 100px; height: 100px;
+    position: absolute;
+    top: 15px; left: 15px;
+    border: 1px solid #fafafa;
+  }
+
+  .top {
+    flex-basis: 75px;
+    background: #ecf0f1;
+    padding-left: 130px;
+    padding-top: 15px;
+
+    div {
+      margin-bottom: 3px;
+    }
+
+    .profile-name {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    .profile-location {
+      opacity: 0.5;
+      color: #2c3e50;
+      font-size: 0.9em;
+    }
+
+    .profile-stats-repo {
+      font-size: 22px;
+      color: #27ae60;
+
+      &::after {
+        content: "REP";
+        font-size: 16px;
+        color: #bdc3c7;
+        opacity: 0.5;
+        padding-left: 1px;
+      }
+    }
+  }
+
+  .bottom {
+    flex: 1;
+    padding-left: 130px;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    padding-top: 7px;
+
+    .profile-stats-badge-gold {
+      flex-grow: 1;
+      color: #f39c12;
+
+      &::after {
+        content: "GOLD";
+        font-size: 8px;
+        color: #f39c12;
+        opacity: 0.8;
+        padding-left: 1px;
+      }
+    }
+
+    .profile-stats-badge-silver {
+      flex-grow: 1;
+      color: #95a5a6;
+
+      &::after {
+        content: "SILVER";
+        font-size: 8px;
+        color: #95a5a6;
+        opacity: 0.8;
+        padding-left: 1px;
+      }
+    }
+
+    .profile-stats-badge-bronze {
+      flex-grow: 1;
+      color: #d35400;
+
+      &::after {
+        content: "BRONZE";
+        font-size: 8px;
+        color: #d35400;
+        opacity: 0.8;
+        padding-left: 1px;
+      }
+    }
+  }
+}
